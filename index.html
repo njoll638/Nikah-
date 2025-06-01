@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Afan & Anggi - Undangan Pernikahan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Splash Screen -->
+<div id="splash">
+  <div class="splash-content" data-aos="zoom-in">
+    <h1 class="couple-name">Afan & Anggi</h1>
+    <p>Kepada Yth. Bapak/Ibu/Saudara</p>
+    <button onclick="openInvitation()">Buka Undangan</button>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div id="main" style="display:none;">
+  <section class="hero" data-aos="fade-up">
+    <h2>Wedding Invitation</h2>
+    <p>19 Juni 2025 - Kendal</p>
+  </section>
+
+  <section class="countdown" data-aos="zoom-in">
+    <h3>Hitung Mundur</h3>
+    <div id="countdown"></div>
+  </section>
+
+  <section class="gallery" data-aos="fade-up">
+    <h3>Galeri</h3>
+    <div class="grid">
+      <img src="https://i.ibb.co/0RpCGZTh/IMG-20250206-WA0055.jpg" alt="foto1" />
+      <img src="https://i.ibb.co/0RpCGZTh/IMG-20250206-WA0055.jpg" alt="foto2" />
+    </div>
+  </section>
+
+  <section class="maps" data-aos="fade-up">
+    <h3>Lokasi</h3>
+    <iframe src="https://maps.google.com/maps?q=-6.9254093,110.2059287&hl=id&z=15&output=embed" frameborder="0" style="width:100%;height:300px;"></iframe>
+  </section>
+
+  <section class="ucapan" data-aos="fade-up">
+    <h3>Ucapan</h3>
+    <div id="ucapanList"></div>
+    <input type="text" id="ucapanInput" placeholder="Tulis ucapanmu...">
+    <button onclick="kirimUcapan()">Kirim</button>
+  </section>
+</div>
+
+<audio id="musik" autoplay loop>
+  <source src="https://feeldream.id/music/melody.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
